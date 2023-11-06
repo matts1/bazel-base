@@ -1,11 +1,11 @@
 # Import sensible presets.
 # See https://github.com/aspect-build/bazel-lib/tree/main/.aspect/bazelrc
-import %workspace%/.aspect/bazelrc/bazel6.bazelrc
-import %workspace%/.aspect/bazelrc/convenience.bazelrc
-import %workspace%/.aspect/bazelrc/correctness.bazelrc
-import %workspace%/.aspect/bazelrc/debug.bazelrc
-import %workspace%/.aspect/bazelrc/javascript.bazelrc
-import %workspace%/.aspect/bazelrc/performance.bazelrc
+import %workspace%/bazelrc/bazel6.bazelrc
+import %workspace%/bazelrc/convenience.bazelrc
+import %workspace%/bazelrc/correctness.bazelrc
+import %workspace%/bazelrc/debug.bazelrc
+import %workspace%/bazelrc/javascript.bazelrc
+import %workspace%/bazelrc/performance.bazelrc
 
 # Enable bazel module system.
 common --enable_bzlmod
