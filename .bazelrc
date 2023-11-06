@@ -1,0 +1,14 @@
+# Import sensible presets.
+# See https://github.com/aspect-build/bazel-lib/tree/main/.aspect/bazelrc
+import %workspace%/.aspect/bazelrc/bazel6.bazelrc
+import %workspace%/.aspect/bazelrc/convenience.bazelrc
+import %workspace%/.aspect/bazelrc/correctness.bazelrc
+import %workspace%/.aspect/bazelrc/debug.bazelrc
+import %workspace%/.aspect/bazelrc/javascript.bazelrc
+import %workspace%/.aspect/bazelrc/performance.bazelrc
+
+# Enable bazel module system.
+common --enable_bzlmod
+
+# Disable the system toolchain.
+build --action_env=BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1
