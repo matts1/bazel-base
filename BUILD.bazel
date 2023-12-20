@@ -1,4 +1,8 @@
-cc_binary(
-    name = "hello_world",
-    srcs = ["hello_world.cc"],
+load(":demo.bzl", "demo")
+
+sh_binary(
+  name = "create",
+  srcs = ["create.sh"],
 )
+
+demo(name = "foo", bin=":create")
