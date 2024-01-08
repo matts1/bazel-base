@@ -1,4 +1,9 @@
-cc_binary(
-    name = "hello_world",
-    srcs = ["hello_world.cc"],
+load(":demo.bzl", "foo", "foo_child")
+
+foo(
+  name = "foo",
+)
+
+foo_child(
+  name = "foo_child",
 )

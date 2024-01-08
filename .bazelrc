@@ -12,3 +12,5 @@ common --enable_bzlmod
 
 # Disable the system toolchain.
 build --action_env=BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1
+
+build --experimental_rule_extension_api
